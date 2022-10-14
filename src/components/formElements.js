@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { formOnSubmit } from "../Redux/action";
 import * as CommonConstants from "../common/commonConstants";
 import Table from "react-bootstrap/Table";
 import "bootstrap/dist/css/bootstrap.css";
@@ -94,7 +93,7 @@ function FormElements() {
               <Button
                 variant="primary"
                 onClick={() => {
-                  dispatch(formOnSubmit(dummyState));
+                  dispatch({ type: CommonConstants.SUBMIT_ACTION, payload: dummyState });
                 }}
               >
                 Sign up

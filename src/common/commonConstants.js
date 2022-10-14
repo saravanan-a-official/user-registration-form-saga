@@ -6,6 +6,7 @@ export const INITIAL_STATE = {
 };
 
 export const SUBMIT_ACTION = "FORM_SUBMIT";
+export const SUBMIT_SUCCESS = "FORM_SUBMIT_SUCCESS";
 export const REGISTER_SUCCESS = "Registration Success";
 export const REGISTERATION_DETAILS = "Registration details";
 export const USER_REGISTER = "User Registration Form";
